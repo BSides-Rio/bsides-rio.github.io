@@ -1,0 +1,14 @@
+title: BSidesRJ
+url: "https://bsides.rio.br"
+baseurl: ""
+footer_text: "&copy; 2025 - 2027 | BSides Rio de Janeiro - All rights reserved."
+collections:
+  speakers:
+    output: true
+    permalink: /speakers/:name.html
+defaults:
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker

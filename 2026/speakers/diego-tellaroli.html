@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Diego Tellaroli | BSides Rio de Janeiro 2026</title>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/2026/css/custom.css">
+	<link rel="icon" type="image/x-icon" href="/2026/images/favicon.ico">
+</head>
+
+<body class="overflow-x-hidden min-h-screen relative">
+<div id="bsides-archive-banner" style="position:relative;z-index:9999;background:#facc15;color:#000;text-align:center;padding:10px 16px;font-family:system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.4"><strong>Arquivo da edição de 2026.</strong> Este conteúdo é histórico e não reflete o evento atual. <a href="/" style="color:#000;text-decoration:underline;font-weight:700">Ver a edição de 2027 &rarr;</a></div>
+
+	<div class="fixed-bg"></div>
+	<div class="content relative z-20 bg-black bg-opacity-50 flex flex-col min-h-screen">
+		<header class="bg-black bg-opacity-60 backdrop-blur-md shadow-lg py-3 flex items-center justify-between px-4">
+	<a href="/2026/">
+		<img src="/2026/images/logo.png" alt="BSidesRJ Logo" class="max-h-14">
+	</a>
+	<nav class="hidden md:flex space-x-4 text-white text-lg">
+		
+			<a href="/2026/" class="hover:text-yellow-400 transition">Início</a>
+		
+			<a href="/2026/schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
+		
+			<a href="/2026/speakers.html" class="hover:text-yellow-400 transition">Palestrantes</a>
+		
+			<a href="/2026/contato.html" class="hover:text-yellow-400 transition">Contato</a>
+		
+			<a href="/2026/codigo-de-conduta.html" class="hover:text-yellow-400 transition">Código de Conduta</a>
+		
+	</nav>
+	<button id="mobile-menu-btn" class="md:hidden text-white ml-4" aria-label="Abrir menu">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+		</svg>
+	</button>
+</header>
+
+		<nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
+	<ul class="flex flex-col p-4 space-y-2">
+		
+			<li><a href="/2026/" class="block hover:text-yellow-400 transition">Início</a></li>
+		
+			<li><a href="/2026/schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
+		
+			<li><a href="/2026/speakers.html" class="block hover:text-yellow-400 transition">Palestrantes</a></li>
+		
+			<li><a href="/2026/contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
+		
+			<li><a href="/2026/codigo-de-conduta.html" class="block hover:text-yellow-400 transition">Código de Conduta</a></li>
+		
+	</ul>
+</nav>
+
+		<div class="flex-grow">
+			<main class="flex-grow container mx-auto px-4 py-16">
+	<div class="max-w-4xl mx-auto bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8">
+		<div class="text-center mb-12">
+			<div class="w-48 h-48 rounded-full overflow-hidden mx-auto mb-6">
+				<img src="/2026/images/speakers/diego-berger.png" alt="Diego Berger Tellaroli" class="w-full h-full object-cover" onerror="this.src='/2026/images/speakers/default-avatar.png'">
+			</div>
+			<h1 class="text-4xl font-bold text-white mb-2">Diego Berger Tellaroli</h1>
+		</div>
+
+		<div class="mb-12">
+			
+			
+				<h2 class="text-2xl font-bold text-yellow-400 mb-4">Linux Rootkits: an introduction to LKM</h2>
+				<p class="text-lg text-white mb-4">15:40 - 16:30 - Palco Secundário</p>
+				<div class="prose prose-lg text-gray-300">
+					<p>A palestra apresenta os conceitos fundamentais sobre rootkits em Linux, com foco em módulos de kernel carregáveis (LKM). O conteúdo aborda o funcionamento do kernel Linux e de seus módulos, explicando como eles podem ser explorados para obter persistência, ocultação completa no sistema e controle avançado do sistema operacional. Também são discutidas técnicas clássicas de rootkits, como hooking de syscalls, escalonamento de privilégios e mecanismos de permanência furtiva, oferecendo uma visão prática e conceitual sobre como essas ameaças operam em ambientes Linux.</p>
+
+				</div>
+			
+		</div>
+		<div>
+		<h2 class="text-2xl font-bold text-yellow-400 mb-4">Sobre</h2>
+			<div class="prose prose-lg text-gray-300">
+				<p>Tech Lead de Offensive Security na Hakai Security, pesquisador de segurança com 5 CVEs publicadas e contribui com a comunidade compartilhando conhecimento sobre técnicas avançadas de exploração. Em seu Github e Linkedin compartilha ativamente suas descobertas.</p>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center mt-8">
+		<a href="/2026/schedule.html" class="inline-block bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">
+			Voltar para a agenda
+		</a>
+	</div>
+</main>
+
+		</div>
+		<footer class="text-center p-4 bg-black bg-opacity-80 text-white">
+	&copy; 2026 | BSides Rio de Janeiro - Edição de 2026 (arquivo).
+</footer>
+
+	</div>
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+		const mobileMenu = document.getElementById('mobile-menu');
+		if (!mobileMenuBtn || !mobileMenu) {
+			return;
+		}
+		mobileMenuBtn.addEventListener('click', function () {
+			mobileMenu.classList.toggle('hidden');
+		});
+	});
+</script>
+
+	
+</body>
+</html>

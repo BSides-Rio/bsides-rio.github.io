@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSidesRJ - BSides Rio de Janeiro</title>
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="/2025/css/custom.css">
+    <link rel="icon" type="image/x-icon" href="/2025/images/favicon.ico">
+    <style>
+        .countdown-item {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+        }
+        .hero-button {
+        animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden min-h-screen relative">
+<div id="bsides-archive-banner" style="position:relative;z-index:9999;background:#facc15;color:#000;text-align:center;padding:10px 16px;font-family:system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.4"><strong>Arquivo da edição de 2025.</strong> Este conteúdo é histórico e não reflete o evento atual. <a href="/" style="color:#000;text-decoration:underline;font-weight:700">Ver a edição de 2027 &rarr;</a></div>
+
+    <!-- Elemento de background fixo -->
+    <div class="fixed-bg"></div>
+
+    <!-- Conteúdo que ficará sobre o background -->
+    <div class="content relative z-20 bg-black bg-opacity-50 flex flex-col min-h-screen">
+        <!-- Header -->
+        <header class="bg-black bg-opacity-60 backdrop-blur-md shadow-lg py-3 flex items-center justify-between px-4">
+            <a href="/2025/index.html">
+                <img src="/2025/images/logo.png" alt="BSidesRJ Logo" class="max-h-14">
+            </a>
+            <!-- Menu para desktop -->
+            <nav class="hidden md:flex space-x-4 text-white text-lg">
+                <a href="/2025/index.html" class="hover:text-yellow-400 transition">Home</a>
+                <a href="/2025/schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
+                <a href="/2025/speakers.html" class="hover:text-yellow-400 transition">Palestrantes</a>
+                <a href="/2025/contato.html" class="hover:text-yellow-400 transition">Contato</a>
+            </nav>
+            <!-- Botão do menu móvel -->
+            <button id="mobile-menu-btn" class="md:hidden text-white ml-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </header>
+
+        <!-- Menu móvel -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
+            <ul class="flex flex-col p-4 space-y-2">
+                <li><a href="/2025/index.html" class="block hover:text-yellow-400 transition">Home</a></li>
+                <li><a href="/2025/schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
+                <li><a href="/2025/speakers.html" class="block hover:text-yellow-400 transition">Palestrantes</a></li>
+                <li><a href="/2025/contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-16">
+            <h1 class="text-4xl font-bold text-center text-yellow-400 mb-12">Agenda</h1>
+
+            <!-- Schedule Grid -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Main Stage -->
+                <div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg shadow-lg p-4 md:p-6">
+                    <h2 class="text-2xl font-bold mb-4 text-center text-white">Main Stage</h2>
+                    <div class="space-y-4">
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">08:00</p>
+                            <p class="text-white">Abertura dos portões/Credênciamento</p>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">09:20</p>
+                            <p class="text-white">Cerimônia de abertura</p>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">09:30 - 10:10</p>
+                            <p class="font-medium text-white">O que vi em dez anos como pesquisador de segurança</p>
+                            <p class="text-sm text-gray-300">Fernando Mercês</p>
+                            <a href="/2025/speakers/fernando-merces.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">10:10 - 11:00</p>
+                            <p class="font-medium text-white">Game Hacking: do Zero ao Kernel</p>
+                            <p class="text-sm text-gray-300">Abid Lohan</p>
+                            <a href="/2025/speakers/abid-lohan.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">11:00 - 11:50</p>
+                            <p class="font-medium text-white">Anatomia de um mini-AS: explorando fragmentos da infraestrutura global da internet</p>
+                            <p class="text-sm text-gray-300">Rodrigo Ferreira</p>
+                            <a href="/2025/speakers/rodrigo-ferreira.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">11:50 - 12:40</p>
+                            <p class="font-medium text-white">The Shadow Behind Red Team Radiance</p>
+                            <p class="text-sm text-gray-300">Lucas Carmo</p>
+                            <a href="/2025/speakers/lucas-carmo.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">12:40 - 14:00</p>
+                            <p class="font-medium text-white">Lunch Break</p>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">14:00 - 14:50</p>
+                            <p class="font-medium text-white">The Darkside of the Moon - How to Really Think About Anti Forensic</p>
+                            <p class="text-sm text-gray-300">Iago Blambila</p>
+                            <a href="/2025/speakers/iago-blambila.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">14:50 - 15:40</p>
+                            <p class="font-medium text-white">Malwares & EDRs</p>
+                            <p class="text-sm text-gray-300">José Luiz</p>
+                            <a href="/2025/speakers/jose-luiz.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">15:40 - 16:30</p>
+                            <p class="font-medium text-white">An approach of FBP for rapid development of offensive security tools</p>
+                            <p class="text-sm text-gray-300">Heitor Gouvêa</p>
+                            <a href="/2025/speakers/heitor-gouvea.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">16:30 - 17:20</p>
+                            <p class="font-medium text-white">Inception — Tips and tricks I've learned reversing vulnerabilities!</p>
+                            <p class="text-sm text-gray-300">Nelson Brito</p>
+                            <a href="/2025/speakers/nelson-brito.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">17:20</p>
+                            <p class="font-medium text-white">Sorteios e Cerimônia de Encerramento</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Stage -->
+                <div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg shadow-lg p-4 md:p-6">
+                    <h2 class="text-2xl font-bold mb-4 text-center text-white">Secondary Stage</h2>
+                    <div class="space-y-4">
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">08:00</p>
+                            <p class="font-medium text-white">Palco Fechado</p>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">09:20</p>
+                            <p class="font-medium text-white">Palco Fechado</p>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">09:30</p>
+                            <p class="font-medium text-white">Palco Fechado</p>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">10:10 - 11:00</p>
+                            <p class="font-medium text-white">Automatic detection of fake profiles on social networks</p>
+                            <p class="text-sm text-gray-300">Heitor Gouvea</p>
+                            <a href="/2025/speakers/heitor-gouvea.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">11:00 - 11:50</p>
+                            <p class="font-medium text-white">Persistência via Cloudf̶l̶a̶r̶e̶: Anatomia de um Ataque do Ransomware Akira</p>
+                            <p class="text-sm text-gray-300">Jefferson Macedo</p>
+                            <a href="/2025/speakers/jefferson-macedo.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">11:50 - 12:40</p>
+                            <p class="font-medium text-white">Cortando o mal pela raiz: modelagem de ameaças</p>
+                            <p class="text-sm text-gray-300">Felipe Navarro</p>
+                            <a href="/2025/speakers/felipe-navarro.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">12:40 - 14:00</p>
+                            <p class="font-medium text-white">Lunch Break</p>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">14:00 - 14:50</p>
+                            <p class="font-medium text-white">Privacidade, open-source e descentralização: Nym mixnet e a próxima geração de infraestrutura de privacidade</p>
+                            <p class="text-sm text-gray-300">Pedro Sydenstricker</p>
+                            <a href="/2025/speakers/pedro-sydenstricker.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">14:50 - 15:40</p>
+                            <p class="font-medium text-white">Ransomware vs EDR: Inside the Mind of Attackers</p>
+                            <p class="text-sm text-gray-300">Zoziel Freire</p>
+                            <a href="/2025/speakers/zoziel-freire.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">15:40 - 16:30</p>
+                            <p class="font-medium text-white">Visualização de modelos de machine learning não-supervisionados baseados em distância para detecção de anomalias</p>
+                            <p class="text-sm text-gray-300">Lucas Reis</p>
+                            <a href="/2025/speakers/lucas-reis.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+                        </div>
+                        <div class="border-b border-gray-600 pb-4">
+                            <p class="text-lg font-semibold text-yellow-400">16:30</p>
+                            <p class="font-medium text-white">Palco Fechado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center p-4 bg-black bg-opacity-80 text-white">
+            &copy; 2025 BSidesRJ - All rights reserved.
+        </footer>
+    </div>
+
+    <!-- JavaScript para alternar o menu móvel (client-side) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>

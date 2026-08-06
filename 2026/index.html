@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BSides Rio de Janeiro | BSides Rio de Janeiro 2026</title>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/2026/css/custom.css">
+	<link rel="icon" type="image/x-icon" href="/2026/images/favicon.ico">
+</head>
+
+<body class="overflow-x-hidden min-h-screen relative">
+<div id="bsides-archive-banner" style="position:relative;z-index:9999;background:#facc15;color:#000;text-align:center;padding:10px 16px;font-family:system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.4"><strong>Arquivo da edição de 2026.</strong> Este conteúdo é histórico e não reflete o evento atual. <a href="/" style="color:#000;text-decoration:underline;font-weight:700">Ver a edição de 2027 &rarr;</a></div>
+
+	<div class="fixed-bg"></div>
+	<div class="content relative z-20 bg-black bg-opacity-50 flex flex-col min-h-screen">
+		<header class="bg-black bg-opacity-60 backdrop-blur-md shadow-lg py-3 flex items-center justify-between px-4">
+	<a href="/2026/">
+		<img src="/2026/images/logo.png" alt="BSidesRJ Logo" class="max-h-14">
+	</a>
+	<nav class="hidden md:flex space-x-4 text-white text-lg">
+		
+			<a href="/2026/" class="hover:text-yellow-400 transition">Início</a>
+		
+			<a href="/2026/schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
+		
+			<a href="/2026/speakers.html" class="hover:text-yellow-400 transition">Palestrantes</a>
+		
+			<a href="/2026/contato.html" class="hover:text-yellow-400 transition">Contato</a>
+		
+			<a href="/2026/codigo-de-conduta.html" class="hover:text-yellow-400 transition">Código de Conduta</a>
+		
+	</nav>
+	<button id="mobile-menu-btn" class="md:hidden text-white ml-4" aria-label="Abrir menu">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+		</svg>
+	</button>
+</header>
+
+		<nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
+	<ul class="flex flex-col p-4 space-y-2">
+		
+			<li><a href="/2026/" class="block hover:text-yellow-400 transition">Início</a></li>
+		
+			<li><a href="/2026/schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
+		
+			<li><a href="/2026/speakers.html" class="block hover:text-yellow-400 transition">Palestrantes</a></li>
+		
+			<li><a href="/2026/contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
+		
+			<li><a href="/2026/codigo-de-conduta.html" class="block hover:text-yellow-400 transition">Código de Conduta</a></li>
+		
+	</ul>
+</nav>
+
+		<div class="flex-grow">
+			<main class="flex-grow">
+	<div class="container mx-auto px-4 py-16 text-center">
+		<h1 class="text-5xl md:text-6xl font-bold text-white mb-8">BSides Rio de Janeiro 2026</h1>
+		<p class="text-xl md:text-2xl text-yellow-400 mb-8">28 de março de 2026 - O maior evento de segurança da informação do Rio</p>
+		<div class="mb-12 bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 max-w-4xl mx-auto">
+		<h2 class="text-2xl font-bold text-white mb-4">Local do evento</h2>
+			<div class="text-yellow-400 text-xl mb-4">Universidade Veiga de Almeida - Campus Tijuca</div>
+			<p class="text-white mb-4">Rua Ibituruna, 108 - Tijuca, Rio de Janeiro - RJ</p>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="https://www.uva.br/campus-tijuca/" target="_blank"
+					class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
+					<svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+						<path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+					</svg>
+					Informações do campus
+				</a>
+				<a href="https://goo.gl/maps/K8s7nQBsfKEfCqMf6" target="_blank"
+					class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
+					<svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+						<path fill-rule="evenodd"
+							d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+							clip-rule="evenodd" />
+					</svg>
+					Ver no Google Maps
+				</a>
+			</div>
+		</div>
+		<div class="mb-12">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
+					<div id="days" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00</div>
+					<div class="text-white text-lg">Dias</div>
+				</div>
+				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
+					<div id="hours" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00</div>
+					<div class="text-white text-lg">Horas</div>
+				</div>
+				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
+					<div id="minutes" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00</div>
+					<div class="text-white text-lg">Minutos</div>
+				</div>
+				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
+					<div id="seconds" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00</div>
+					<div class="text-white text-lg">Segundos</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+			<a href="https://www.sympla.com.br/evento/bsides-rio-de-janeiro/3226424" target="_blank"
+				class="hero-button inline-block bg-yellow-400 text-black text-xl font-bold py-4 px-8 rounded-lg hover:bg-yellow-500 transition duration-300 transform hover:scale-105">
+				Adquira seu ingresso de apoiador
+			</a>
+		</div>
+	</div>
+</main>
+<section id="patrocinadores" class="py-16">
+	<div class="container mx-auto px-4">
+		<h2 class="text-4xl font-bold text-center text-white mb-12">Patrocinadores</h2>
+		<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mx-auto max-w-5xl">
+			<div class="mb-16">
+				<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores diamante</h3>
+				<div class="flex flex-wrap justify-center gap-8">
+					<a href="https://uva.br/"
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/patrocinadores/uva.webp" alt="UVA" class="h-28 w-56 object-contain">
+					</a>
+				</div>
+			</div>
+			<div class="mb-16">
+				<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores ouro</h3>
+				<div class="flex flex-wrap justify-center gap-8">
+					<a href="https://hakaisecurity.io"
+						class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/patrocinadores/hakai.png" alt="Hakai" class="h-20 w-40 object-contain">
+					</a>
+					<a href="https://www.vortexsecurity.com.br"
+						class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/patrocinadores/vortex.png" alt="Vortex" class="h-20 w-40 object-contain">
+					</a>
+					<a href="https://clavis.com.br"
+						class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/patrocinadores/clavis.jpg" alt="Clavis" class="h-20 w-40 object-contain">
+					</a>
+					<a href="https://www.fiap.com.br"
+						class="bg-gray-800 rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/patrocinadores/logo-fiap.png" alt="FIAP" class="h-20 w-40 object-contain">
+					</a>
+				</div>
+			</div>
+			<div class="mb-16">
+				<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores prata</h3>
+				<div class="flex flex-wrap justify-center gap-8">
+					<a href="https://bughunt.com.br"
+						class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/patrocinadores/logo-bughunt.svg" alt="BugHunt" class="h-16 w-32 object-contain">
+					</a>
+					<a href="https://redwolves.io"
+						class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/patrocinadores/redwolves.jpg" alt="Red Wolves" class="h-16 w-32 object-contain">
+					</a>
+				</div>
+			</div>
+			<div class="mb-16">
+				<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores bronze</h3>
+				<div class="flex flex-wrap justify-center gap-8">
+					<a href="https://mobileappdefense.com"
+						class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/patrocinadores/mad.jpg" alt="MAD" class="h-12 w-24 object-contain">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="apoiadores" class="py-16">
+	<div class="container mx-auto px-4">
+		<h2 class="text-4xl font-bold text-center text-white mb-12">Apoiadores</h2>
+		<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mx-auto max-w-5xl">
+			<div class="mb-16">
+				<div class="flex flex-wrap justify-center gap-8">
+					<a href="https://www.instagram.com/meninadecybersec/"
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/apoiadores/meninacybersec.jpg" alt="Menina de Cybersec" class="h-24 w-auto object-contain">
+					</a>
+					<a href="https://linktr.ee/hackinrio" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/apoiadores/hackinrio.png" alt="Hack in Rio" class="h-24 w-auto object-contain">
+					</a>
+					<a href="https://www.instagram.com/womcy/" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/apoiadores/womcy.png" alt="Womcy" class="h-24 w-auto object-contain">
+					</a>
+					<a href="https://www.riomakerspace.com.br" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/apoiadores/rms.jpeg" alt="Rio Maker Space" class="h-24 w-auto object-contain">
+					</a>
+					<a href="https://redteamvillage.io" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/apoiadores/redteamvillage.png" alt="Red Team Village" class="h-24 w-auto object-contain">
+					</a>
+					<a href="https://engage.isaca.org/riodejaneirochapter/home" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/apoiadores/ISACA%20RIO.jpeg" alt="Red Team Village" class="h-24 w-auto object-contain">
+					</a>
+					<a href="https://novatec.com.br" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="/2026/images/apoiadores/novatec.png" alt="Novatec Editora" class="h-24 w-auto object-contain">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /gift/you-deserve.txt -->
+
+		</div>
+		<footer class="text-center p-4 bg-black bg-opacity-80 text-white">
+	&copy; 2026 | BSides Rio de Janeiro - Edição de 2026 (arquivo).
+</footer>
+
+	</div>
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+		const mobileMenu = document.getElementById('mobile-menu');
+		if (!mobileMenuBtn || !mobileMenu) {
+			return;
+		}
+		mobileMenuBtn.addEventListener('click', function () {
+			mobileMenu.classList.toggle('hidden');
+		});
+	});
+</script>
+
+	
+		<script>
+	function updateCountdown() {
+		const eventDate = new Date('March 28, 2026 09:00:00 GMT-0300').getTime();
+		const now = new Date().getTime();
+		const distance = eventDate - now;
+
+		const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		const daysEl = document.getElementById('days');
+		const hoursEl = document.getElementById('hours');
+		const minutesEl = document.getElementById('minutes');
+		const secondsEl = document.getElementById('seconds');
+
+		if (!daysEl || !hoursEl || !minutesEl || !secondsEl) {
+			return;
+		}
+
+		daysEl.textContent = String(days).padStart(2, '0');
+		hoursEl.textContent = String(hours).padStart(2, '0');
+		minutesEl.textContent = String(minutes).padStart(2, '0');
+		secondsEl.textContent = String(seconds).padStart(2, '0');
+
+		if (distance < 0) {
+			clearInterval(countdownInterval);
+			daysEl.textContent = '00';
+			hoursEl.textContent = '00';
+			minutesEl.textContent = '00';
+			secondsEl.textContent = '00';
+		}
+	}
+	updateCountdown();
+	const countdownInterval = setInterval(updateCountdown, 1000);
+</script>
+
+	
+</body>
+</html>
